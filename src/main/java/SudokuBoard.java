@@ -1,77 +1,31 @@
-import java.util.Random;
 
 public class SudokuBoard {
 
-    private int[][] board = new int[9][9];
+    public final int length = 9;
+    private int[][] board = new int[length][length];
 
 
-    public void fillBoard(){
-        for (int i = 0; i < board.length; i++){
-            for (int j = 0; j < board.length; j++){
-                board[i][j] = 0;
-            }
-        }
-        recursiveFillBoard();
+
+    public SudokuBoard(int[][] board) {
+        this.board = board;
     }
 
-    private boolean recursiveFillBoard(){
-        int row = -1;
-        int column = -1;
-        boolean isEmpty = false;
-        for (int i = 0; i < board.length; i++){
-            for (int j = 0; j < board.length; j++){
-                if (board[i][j] == 0){
-                    row = i;
-                    column = j;
-                    isEmpty = true;
-                    break;
-                }
-            }
-            if (isEmpty)
-                break;
-        }
-        if (!isEmpty)
-            return true;
 
-        for (int i = 1; i < 10; i++){
-            if (isSafe(board, row, column, i)){
-                board[row][column] = i;
-                if (recursiveFillBoard())
-                    return true;
-                else
-                    board[row][column] = 0;
-            }
-        }
-        return false;
+    public int getNum(int row, int column) {
+        return board[row][column];
     }
 
-    private boolean isSafe(int[][] board, int row, int column, int num){
-        for (int i = 0; i < board.length; i++){
-            if (board[row][i] == num)
-                return false;
-        }
-        for (int j = 0; j < board.length; j++){
-            if (board[j][column] == num)
-                return false;
-        }
-
-        int[][] square = new int[3][3];
-        int startIndexRow = row - row%3;
-        int startIndexColumn = column - column%3;
-
-        for (int r = startIndexRow;
-             r < startIndexRow + 3; r++)
-        {
-            for (int c = startIndexColumn ;
-                 c < startIndexColumn + 3; c++)
-            {
-                if (board[r][c] == num)
-                {
-                    return false;
-                }
-            }
-        }
-        return true;
-
+    public void setNum(int row, int column, int num) {
+        board[row][column] = num;
     }
+
+    public void solveGame(){
+        SudokuBoard newBoard = new SudokuBoard(board);
+        SudokuSolver sudokuSolver = new BacktrackingSudokuSolver();
+        sudokuSolver.solve(newBoard);
+    }
+
+
+
+
 }
