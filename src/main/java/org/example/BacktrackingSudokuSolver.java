@@ -1,5 +1,6 @@
+package org.example;
 
-public class BacktrackingSudokuSolver implements SudokuSolver{
+public class BacktrackingSudokuSolver implements ISudokuSolver {
 
     @Override
     public void solve(SudokuBoard sudokuBoard) {
