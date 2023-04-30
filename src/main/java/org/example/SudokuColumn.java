@@ -4,7 +4,7 @@ import java.util.List;
 
 public class SudokuColumn extends SudokuGroup {
 
-    protected SudokuColumn(SudokuField[] column) {
+    public SudokuColumn(SudokuField[] column) {
         super(column);
     }
 

@@ -9,6 +9,11 @@ public class SudokuBoard {
     public SudokuBoard(ISudokuSolver sudokuSolver) {
 
         this.sudokuSolver = sudokuSolver;
+        for (int i = 0; i < length; i++){
+            for (int j = 0; j < length; j++){
+                board[i][j] = new SudokuField();
+            }
+        }
     }
 
     public int getNum(int row, int column) {
@@ -21,20 +26,20 @@ public class SudokuBoard {
         board[row][column].setValue(num);
     }
 
-    public void solveGame(){
+    public void solveGame() {
 
         this.sudokuSolver.solve(this);
     }
 
-    public SudokuColumn getColumn(int index){
+    public SudokuColumn getColumn(int index) {
         SudokuField[] array = new SudokuField[length];
         for (int i = 0; i < 9; i++) {
             array[i] = board[i][index];
         }
-       return new SudokuColumn(array);
+        return new SudokuColumn(array);
     }
 
-    public SudokuRow getRow(int index){
+    public SudokuRow getRow(int index) {
         SudokuField[] array = new SudokuField[length];
         for (int i = 0; i < 9; i++) {
             array[i] = board[index][i];
@@ -42,10 +47,12 @@ public class SudokuBoard {
         return new SudokuRow(array);
     }
 
-    public SudokuBox getBox(int row, int column){
+    public SudokuBox getBox(int row, int column) {
         SudokuField[] array = new SudokuField[length];
-        for (int i = row; i < row + 3; i++) {
-            for (int j = column; j < column + 3; j++){
+        int r = row / 3;
+        int c = column / 3;
+        for (int i = r * 3; i < r * 3 + 3; i++) {
+            for (int j = c * 3; j < c * 3 + 3; j++) {
                 array[i] = board[i][j];
             }
         }

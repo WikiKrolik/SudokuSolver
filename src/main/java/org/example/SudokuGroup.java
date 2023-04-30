@@ -7,7 +7,7 @@ public abstract class SudokuGroup {
     public static final int SIZE = 9;
     private final SudokuField[] sudokuFields;
 
-    protected SudokuGroup(SudokuField[] sudokuFields) {
+    public SudokuGroup(SudokuField[] sudokuFields) {
         this.sudokuFields = sudokuFields;
     }
 

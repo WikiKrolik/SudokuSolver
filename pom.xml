@@ -13,25 +13,24 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
+
     <dependencies>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.2.0</version>
+            <version>5.9.1</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>0.8.7</version>
         </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-runner</artifactId>
-            <version>1.2.0</version>
-            <scope>test</scope>
-        </dependency>
+
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -48,11 +47,13 @@
                     <release>${java.version}</release>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M9</version>
             </plugin>
+
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -86,10 +87,11 @@
                         </configuration>
                     </execution>
                 </executions>
-
             </plugin>
+
         </plugins>
     </build>
+
     <reporting>
         <plugins>
             <plugin>

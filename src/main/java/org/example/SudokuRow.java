@@ -5,7 +5,7 @@ import java.util.List;
 public class SudokuRow extends SudokuGroup {
 
 
-    protected SudokuRow(SudokuField[] row) {
+    public SudokuRow(SudokuField[] row) {
         super(row);
     }
 
