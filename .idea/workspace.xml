@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40e55fe9-d4c2-47c6-9981-8bc6277558e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/SudokuBoardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/SudokuGroupTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuGroup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuRow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SudokuBoardTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SudokuBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SudokuBoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SudokuGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SudokuGroupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,22 +58,18 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SudokuGroupTest.checkVerifyInRow">
-    <configuration name="SudokuBoardTest.checkColumns" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SudokuFieldTest.checkFieldEquals">
+    <configuration name="SudokuFieldTest.checkFieldEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SudokuSolver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SudokuBoardTest" />
-      <option name="METHOD_NAME" value="checkColumns" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SudokuBoardTest.whenSolveGame_thenSolvedGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SudokuSolver" />
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SudokuBoardTest" />
-      <option name="METHOD_NAME" value="whenSolveGame_thenSolvedGame" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SudokuFieldTest" />
+      <option name="METHOD_NAME" value="checkFieldEquals" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -88,11 +84,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuGroupTest.checkColumns" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SudokuGroupTest.MaciekTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SudokuSolver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.SudokuGroupTest" />
-      <option name="METHOD_NAME" value="checkColumns" />
+      <option name="METHOD_NAME" value="MaciekTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SudokuGroupTest.checkRowEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SudokuSolver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SudokuGroupTest" />
+      <option name="METHOD_NAME" value="checkRowEquals" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SudokuFieldTest.checkFieldEquals" />
+        <item itemvalue="JUnit.SudokuGroupTest.checkRowEquals" />
+        <item itemvalue="JUnit.SudokuGroupTest.MaciekTest" />
         <item itemvalue="JUnit.SudokuGroupTest.checkVerifyInRow" />
         <item itemvalue="JUnit.SudokuGroupTest" />
-        <item itemvalue="JUnit.SudokuGroupTest.checkColumns" />
-        <item itemvalue="JUnit.SudokuBoardTest.whenSolveGame_thenSolvedGame" />
-        <item itemvalue="JUnit.SudokuBoardTest.checkColumns" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +158,8 @@
       <workItem from="1682538912098" duration="1761000" />
       <workItem from="1682540725476" duration="63000" />
       <workItem from="1682618742927" duration="11839000" />
-      <workItem from="1682881200261" duration="5289000" />
+      <workItem from="1682881200261" duration="6694000" />
+      <workItem from="1683143915383" duration="3315000" />
     </task>
     <servers />
   </component>

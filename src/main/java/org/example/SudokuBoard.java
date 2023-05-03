@@ -1,5 +1,9 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class SudokuBoard {
 
     public final int length = 9;
@@ -36,7 +40,7 @@ public class SudokuBoard {
         for (int i = 0; i < 9; i++) {
             array[i] = board[i][index];
         }
-        return new SudokuColumn(array);
+        return new SudokuColumn(Arrays.asList(array));
     }
 
     public SudokuRow getRow(int index) {
@@ -44,7 +48,7 @@ public class SudokuBoard {
         for (int i = 0; i < 9; i++) {
             array[i] = board[index][i];
         }
-        return new SudokuRow(array);
+        return new SudokuRow(Arrays.asList(array));
     }
 
     public SudokuBox getBox(int row, int column) {
@@ -56,7 +60,7 @@ public class SudokuBoard {
                 array[i] = board[i][j];
             }
         }
-        return new SudokuBox(array);
+        return new SudokuBox(Arrays.asList(array));
     }
 
 }

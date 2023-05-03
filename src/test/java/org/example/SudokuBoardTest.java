@@ -26,7 +26,4 @@ public class SudokuBoardTest {
             System.out.println();
         }
     }
-
-
-
 }

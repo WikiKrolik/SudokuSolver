@@ -1,13 +1,15 @@
 package org.example;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public abstract class SudokuGroup {
 
     public static final int SIZE = 9;
-    private final SudokuField[] sudokuFields;
+    private final List<SudokuField> sudokuFields;
 
-    public SudokuGroup(SudokuField[] sudokuFields) {
+    protected SudokuGroup(List<SudokuField> sudokuFields) {
         this.sudokuFields = sudokuFields;
     }
 
@@ -21,5 +23,25 @@ public abstract class SudokuGroup {
             }
         }
         return true;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof SudokuGroup)) return false;
+        SudokuGroup that = (SudokuGroup) o;
+        return Objects.equals(sudokuFields, that.sudokuFields);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(sudokuFields);
+    }
+
+    @Override
+    public String toString() {
+        return "SudokuGroup{" +
+                "sudokuFields=" + sudokuFields +
+                '}';
     }
 }

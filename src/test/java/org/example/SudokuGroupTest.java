@@ -3,6 +3,10 @@ package org.example;
 import junit.framework.Assert;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class SudokuGroupTest {
 
     @Test
@@ -13,7 +17,7 @@ public class SudokuGroupTest {
             c[i].setValue(1);
         }
 
-        SudokuRow row = new SudokuRow(c);
+        SudokuRow row = new SudokuRow(Arrays.asList(c));
         boolean result = row.verify();
         Assert.assertFalse(result);
     }
@@ -26,7 +30,7 @@ public class SudokuGroupTest {
             c[i].setValue(i+1);
         }
 
-        SudokuBox box = new SudokuBox(c);
+        SudokuBox box = new SudokuBox(Arrays.asList(c));
         boolean result = box.verify();
         Assert.assertTrue(result);
     }
@@ -40,9 +44,16 @@ public class SudokuGroupTest {
             c[i].setValue(i+1);
         }
 
-        SudokuColumn column = new SudokuColumn(c);
+        SudokuColumn column = new SudokuColumn(Arrays.asList(c));
         boolean result = column.verify();
         Assert.assertTrue(result);
     }
 
+    @Test
+    void checkRowEquals(){
+        List<SudokuField> list = new ArrayList<>();
+        SudokuRow row = new SudokuRow(list);
+        SudokuRow secondRow = new SudokuRow(list);
+        Assert.assertTrue(row.equals(secondRow));
+    }
 }
