@@ -1,10 +1,11 @@
 package org.example;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class SudokuBoard {
+public class SudokuBoard implements Serializable {
 
     public final int length = 9;
     private SudokuField[][] board = new SudokuField[9][9];
@@ -63,4 +64,17 @@ public class SudokuBoard {
         return new SudokuBox(Arrays.asList(array));
     }
 
+    @Override
+    public String toString() {
+        String result =  "SudokuBoard{" +
+                "board=" + "\n";
+        for (int i = 0; i < board.length; i++){
+            for (int j = 0; j < board.length; j++){
+                result += board[i][j].getValue();
+            }
+            result+= "\n";
+        }
+        result+= "}";
+       return result;
+    }
 }

@@ -6,15 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="40e55fe9-d4c2-47c6-9981-8bc6277558e6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BacktrackingSudokuSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BacktrackingSudokuSolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuColumn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuRow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SudokuBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SudokuBoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SudokuGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SudokuGroupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +52,20 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SudokuFieldTest.checkFieldEquals">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Client" />
+      <module name="SudokuSolver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SudokuFieldTest.checkFieldEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SudokuSolver" />
       <extension name="coverage">
@@ -71,15 +78,6 @@
       <option name="MAIN_CLASS_NAME" value="org.example.SudokuFieldTest" />
       <option name="METHOD_NAME" value="checkFieldEquals" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SudokuGroupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SudokuSolver" />
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SudokuGroupTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
         <item itemvalue="JUnit.SudokuFieldTest.checkFieldEquals" />
         <item itemvalue="JUnit.SudokuGroupTest.checkRowEquals" />
         <item itemvalue="JUnit.SudokuGroupTest.MaciekTest" />
         <item itemvalue="JUnit.SudokuGroupTest.checkVerifyInRow" />
-        <item itemvalue="JUnit.SudokuGroupTest" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +157,9 @@
       <workItem from="1682540725476" duration="63000" />
       <workItem from="1682618742927" duration="11839000" />
       <workItem from="1682881200261" duration="6694000" />
-      <workItem from="1683143915383" duration="3315000" />
+      <workItem from="1683143915383" duration="3538000" />
+      <workItem from="1683148279615" duration="19000" />
+      <workItem from="1683569638575" duration="3610000" />
     </task>
     <servers />
   </component>

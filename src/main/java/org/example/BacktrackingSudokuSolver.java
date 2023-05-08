@@ -1,6 +1,8 @@
 package org.example;
 
-public class BacktrackingSudokuSolver implements ISudokuSolver {
+import java.io.Serializable;
+
+public class BacktrackingSudokuSolver implements ISudokuSolver, Serializable {
 
     @Override
     public void solve(SudokuBoard sudokuBoard) {
